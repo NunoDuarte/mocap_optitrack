@@ -5,32 +5,32 @@
 #  configuration.
 
 rigid_bodies:
-    '11':
+    '1':
         pose: Yumi_1/pose
 #       pose2d: Robot_1/ground_pose
         child_frame_id: Robot_1/base_link
         parent_frame_id: world
-    '12':
+    '2':
         pose: Yumi_2/pose
 #       pose2d: Robot_2/ground_pose
         child_frame_id: Robot_2/base_link
         parent_frame_id: world
-    '13':
+    '3':
         pose: Yumi_3/pose
 #       pose2d: Robot_2/ground_pose
         child_frame_id: Robot_2/base_link
         parent_frame_id: world
-    '14':
+    '4':
         pose: YumiR_1/pose
 #       pose2d: Robot_2/ground_pose
         child_frame_id: Robot_2/base_link
         parent_frame_id: world
-    '15':
+    '5':
         pose: YumiR_2/pose
 #       pose2d: Robot_2/ground_pose
         child_frame_id: Robot_2/base_link
         parent_frame_id: world
-    '16':
+    '6':
         pose: YumiR_3/pose
 #       pose2d: Robot_2/ground_pose
         child_frame_id: Robot_2/base_link
