@@ -33,7 +33,7 @@ minor modifications (primarily in the configuration options).
 ## Quick launch at IST
 
     roslaunch mocap_optitrack mocap.launch
-
+    
 ## Configuration options
 
 By default, this node only streams pose data for rigid body IDs listed in the
@@ -42,6 +42,16 @@ configuration files.  Edit the rigid_bodies configuration in this file (standard
 yaml syntax) to provide the list of marker IDs (usually integers) that you want
 to track. For each marker, you should specify the pose topics, and the name of
 the TF frame (`child_frame_id`).
+
+Check Command Port and Data Port on config file and on Motive. On Motive it should be:
+- Command Port: 1510
+- Data Port: 1511
+
+On config file it should be:
+- Command Port: 3110
+- Data Port: 3131
+
+why? check work of optitrack_yarp_stream. It has those values and it works. 
 
 ## Tips and tricks
 
