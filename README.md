@@ -1,27 +1,29 @@
-# Optitrack at LASA
-
-[![Build Status](https://travis-ci.org/epfl-lasa/mocap_optitrack.svg?branch=master)](https://travis-ci.org/epfl-lasa/mocap_optitrack)
+# Optitrack at LASA or IST
 
 This package streams ROS pose data (pose messages and TF frames) for detected
 optitrack rigid bodies.
 
 NOTE: It is compatible with *both* the new and old versions of the Motive
-software, but all following instructions will assume you are **running the new
-version (Motive 1.9)**.
+software. However following instructions are **running in
+version (Motive 2.2)**.
 
 It is a fork of the
-[ros-drivers](https://github.com/ros-drivers/mocap_optitrack) package, with
+[ros-drivers](https://github.com/epfl-lasa/mocap_optitrack) package, with
 minor modifications (primarily in the configuration options).
 
-## Quick launch
+## Quick launch at EPFL
 
     roslaunch mocap_optitrack epfl_optitrack.launch
+    
+## Quick launch at IST
+
+    roslaunch mocap_optitrack mocap.launch
 
 ## Configuration options
 
 By default, this node only streams pose data for rigid body IDs listed in the
-[epfl.yaml](https://github.com/epfl-lasa/mocap_optitrack/blob/master/config/epfl.yaml)
-configuration file.  Edit the rigid_bodies configuration in this file (standard
+[epfl.yaml](https://github.com/NunoDuarte/mocap_optitrack/blob/master/config/epfl.yaml) or [mocap.yaml](https://github.com/NunoDuarte/mocap_optitrack/blob/master/config/mocap.yaml)
+configuration files.  Edit the rigid_bodies configuration in this file (standard
 yaml syntax) to provide the list of marker IDs (usually integers) that you want
 to track. For each marker, you should specify the pose topics, and the name of
 the TF frame (`child_frame_id`).
