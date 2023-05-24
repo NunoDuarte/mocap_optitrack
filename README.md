@@ -16,15 +16,16 @@ minor modifications (primarily in the configuration options).
 - Motive (v.2.2.0 final - on Windows PC)
 
 ## Instructions
+- Follow instructions to install [NatNet](https://v22.wiki.optitrack.com/index.php?title=NatNet:_Sample_Projects#Running_the_Console_Output_Sample_.28Sample_Client.29) on linux machine (Ubuntu 18.04) 
+- Test that NatNet can detect Motive on Windows machine (if not, a previous step is incomplete)
 - Install [Motive](https://optitrack.com/support/downloads/motive.html) on Windows PC 
 - Run Motive 
-- Turn on Streaming Panel
+- Turn on Streaming Panel (DONT FORGET: turn on Broadcast Frame - otherwise none of this is being streamed)
 - Open Advanced Settings 
 - Check IP address (this is IP of Windows machine)
 - ping IP Address of Windows machine on linux (if you can not ping turn off Windows firewall)
-- Follow instructions to install [NatNet](https://v22.wiki.optitrack.com/index.php?title=NatNet:_Sample_Projects#Running_the_Console_Output_Sample_.28Sample_Client.29) on linux machine (Ubuntu 18.04) 
-- Test that NatNet can detect Motive on Windows machine (if not, a previous step is incomplete)
 - everything is set
+- IF IT DOESNT WORK - try to run optitrack_yarp_stream using VS 2017 @TODO or [CodeBlocks](https://github.com/NunoDuarte/armCoupling_iCub/blob/master/lsl/pupil/README.md)
 
 ## Quick launch at EPFL
 
