@@ -25,7 +25,7 @@ minor modifications (primarily in the configuration options).
 - Check IP address (this is IP of Windows machine)
 - ping IP Address of Windows machine on linux (if you can not ping turn off Windows firewall)
 - everything is set
-- IF IT DOESNT WORK - try to run optitrack_yarp_stream using VS 2017 @TODO or [CodeBlocks](https://github.com/NunoDuarte/armCoupling_iCub/blob/master/lsl/pupil/README.md)
+- IF IT DOESN'T WORK - try to run optitrack_yarp_stream using VS 2017 or [CodeBlocks](https://github.com/NunoDuarte/armCoupling_iCub/blob/master/lsl/pupil/README.md)
 
 ## Quick launch at EPFL
 
